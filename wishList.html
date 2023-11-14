@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위시리스트</title>
+    <link rel="stylesheet" href="/css/wishList.css">
+</head>
+<body>
+    
+    <!-- 헤더바 자리 -->
+    
+    <section class="mainContainer">
+        <!--레프트빈공간-->
+        <div class="emptyContainer">123</div>
+        
+        <!--메인공간-->
+        <div class="midContainer">
+            
+            <h2>CAMPING LIST</h2>
+            
+            <table class="campingListTB">
+                <tr>
+                    <!-- 전체선택체크박스 js구현하기-->
+                    <!-- th 위 진한선 아래 연한선주고 추가되는 상품의 밑 마다 선주기-->
+                    <th><input type="checkbox" class=""></th>
+                    <th>번호</th>
+                    <th>사진</th>
+                    <th>캠핑장 명</th>
+                    <th>취소</th>
+                </tr>
+                <!-- tr 추가되는식으로 상품추가-->
+                <!-- 없으면 없다고 표시하자!!-->
+                <tr>
+                    <!-- 개별선택체크박스-->
+                    <td><input type="checkbox" class=""></td>
+                    <td>1</td>
+                    <td><img src="/0340020000042.jpg" alt=""></td>
+                    <td>Catgill 캠핑장<a href="#">예약하기</a></td>
+                    <td><a href="#" class="">DELETE</a></td>
+                </tr>
+            </table>
+
+            <h2>ITEM LIST</h2>
+
+            <table class="itemListTB">
+                <tr>
+                    <th><input type="checkbox" class=""></th>
+                    <th>번호</th>
+                    <th>사진</th>
+                    <th>상품명</th>
+                    <th>재고</th>
+                    <th>금액</th>
+                    <th>취소</th>
+                </tr>
+                <!-- 위와 같은 참고사항 지킬것-->
+                <tr>
+                    <td><input type="checkbox" class=""></td>
+                    <td>1</td>
+                    <td><img src="/0340020000042.jpg"></td>
+                    <td>밀크 소파 : 블랙</td>
+                    <td>있음</td>
+                    <td>100원</td>
+                    <td><a href="#">DELETE</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class=""></td>
+                    <td>2</td>
+                    <td><img src="/0340020000042.jpg"></td>
+                    <td>밀크 소파 : 블랙</td>
+                    <td>있음</td>
+                    <td>100원</td>
+                    <td><a href="#">DELETE</a></td>
+                </tr>
+
+            </table>
+            <div class="buttonList">
+                <a href="#" class="">선택삭제</a>
+                <a href="#" class="">장바구니</a>
+                <a href="#" class="">돌아가기</a>
+            </div>
+        </div>
+        
+        <!--라이트빈공간-->
+        <div class="emptyContainer"></div>
+    </section>
+
+    <!-- 풋터 자리-->
+
+</body>
+</html>

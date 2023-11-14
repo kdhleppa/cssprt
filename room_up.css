@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+}
+
+
+
+
+
+.html, .body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.logo {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    height: 80px;
+    
+}
+
+.logo > a > img {
+    height: 65px;
+}
+
+
+.menu {
+    background-color: #B96BC6;
+    width: 90vw;
+    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-weight: 800;
+    font-size: 22px;
+    height: 80px;
+    color: white;
+    position: sticky;
+    right: 0;
+    min-width: 1000px;
+}
+
+.menu > div {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+}
+
+/*여기까지 탑바 공통*/
+
+
+
+
+
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height : 600px;
+}
+
+
+#top-title{
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 80px;
+    font-weight: bold;
+
+    
+}
+
+
+#mid-title{
+    margin-bottom: 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 25px;
+    color: #0570BD;
+
+    
+}
+
+
+#bottom-title{
+    margin-bottom: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    font-size: 18px;
+    text-decoration: none;
+   
+
+    
+}
+
+
+/* 매물 정보 tg1 */
+
+.tg1  {
+    
+    border-collapse:collapse;
+    border-spacing:0;
+    margin-bottom: 50px;
+
+}
+
+
+.tg1 td{
+
+    border-color:rgb(204, 201, 201);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    
+    padding:10px 5px;
+    word-break:normal;
+}
+
+
+
+.tg1 th{
+    border-color:rgb(204, 201, 201);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+   
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg1 .tg1-kftd{
+    background-color:#efefefd5;
+    text-align:left;
+    vertical-align:top;
+
+}
+
+
+.tg1 .tg1-0lax{
+    text-align:left;
+    vertical-align:top;
+
+}
+
+.serchDiv {
+	margin-bottom: 10px;
+}
+
+#productSerchBox{
+	display: flex;
+    flex-direction: column;
+}
+
+#productAddress {
+    width: 300px;
+    height: 30px;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-left: 10px;
+}
+
+#productAddressHo {
+	width: 300px;
+    height: 30px;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-left: 10px;
+}
+
+.address-btn {
+    height: 30px;
+    width: 100px;
+    cursor : pointer;
+    border-left: 1px solid grey;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+
+
+/* 거래 정보 tg2 */
+
+.tg2  {
+    border-collapse:collapse;
+    border-spacing:0;
+
+    margin-bottom: 50px;
+
+}
+
+
+.tg2 td{
+    
+    border-color:rgb(204, 201, 201);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+
+
+.tg2 th{
+    border-color:rgb(204, 201, 201);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg2 .tg2-kftd{
+    background-color:#efefefd5;
+    text-align:left;
+    vertical-align:top;
+
+}
+
+
+.tg2 .tg2-0lax{
+    text-align:left;
+    vertical-align:top;
+
+}
+
+
+
+/* 시설 정보 tg3 */
+
+.tg3  {
+    border-collapse:collapse;
+    border-spacing:0;
+    
+    margin-bottom: 50px;
+
+
+}
+
+
+.tg3 td{
+    
+    border-color:rgb(204, 201, 201);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+
+
+.tg3 th{
+    border-color:rgb(204, 201, 201);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg3 .tg3-kftd{
+    background-color:#efefefd5;
+    text-align:left;
+    vertical-align:top;
+
+}
+
+
+.tg3 .tg3-0lax{
+    text-align:left;
+    vertical-align:top;
+
+}
+
+
+
+
+/* 사진 등록 tg4 */
+
+.tg4  {
+    border-collapse:collapse;
+    border-spacing:0;
+    
+    margin-bottom: 50px;
+
+
+}
+
+
+.tg4 td{
+    
+    border-color:rgb(204, 201, 201);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+
+
+.tg4 th{
+    border-color:rgb(204, 201, 201);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg4 .tg4-kftd{
+    background-color:#efefefd5;
+    text-align:left;
+    vertical-align:top;
+
+}
+
+
+.tg4 .tg4-0lax{
+    text-align:left;
+    vertical-align:top;
+
+}
+
+
+
+#photo-add {
+    height: 40px;
+    width: 100px;
+    cursor : pointer;
+    padding:10px 5px;
+}
+
+
+
+
+/* 추가 정보 tg5 */
+
+.tg5  {
+    border-collapse:collapse;
+    border-spacing:0;
+    
+    margin-bottom: 50px;
+
+
+}
+
+
+.tg5 td{
+    
+    border-color:rgb(204, 201, 201);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+
+
+.tg5 th{
+    border-color:rgb(204, 201, 201);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg5 .tg5-kftd{
+    background-color:#efefefd5;
+    text-align:left;
+    vertical-align:top;
+
+}
+
+
+.tg5 .tg5-0lax{
+    text-align:left;
+    vertical-align:top;
+
+}
+
+
+
+/* 상세 설명 tg6 */
+
+.tg6  {
+    border-collapse:collapse;
+    border-spacing:0;
+    
+    margin-bottom: 50px;
+
+
+}
+
+
+.tg6 td{
+    
+    border-color:rgb(204, 201, 201);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+
+
+.tg6 th{
+    border-color:rgb(204, 201, 201);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg6 .tg6-kftd{
+    background-color:#efefefd5;
+    text-align:left;
+    vertical-align:top;
+
+}
+
+
+.tg6 .tg6-0lax{
+    text-align:left;
+    vertical-align:top;
+  
+}
+
+#Description-title {
+    
+    border-color:rgb(204, 201, 201);
+    width: 500px;
+ 
+}
+
+
+
+#Description-detail {
+    
+    border-color:rgb(204, 201, 201);
+    width: 500px;
+    height: 300px;
+}
+
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+
+}
+
+
+#checkbox {
+
+    margin-bottom: 50px;
+}
+
+
+
+
+#registration-btn {
+    height: 60px;
+    width: 120px;
+    font-size: 20px;
+    cursor : pointer;
+    border: none;
+    background-color: #AC47FC;
+    color: white;
+    padding:10px 5px;
+    margin-bottom: 50px;
+}
+
+#mapbox {
+	width : 700px;
+	height : 400px;
+	margin : 10px;
+}
+
+textarea {
+  resize: none; /* 크기 조절 비활성화 */
+  
+}
+
+.boardImg {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin: 10px;
+}
+
+.preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.delete-image {
+	position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #d8bffd; /* 연보라색 */
+    cursor: pointer;
+    width: 30px; /* 너비와 높이를 동일하게 설정 */
+    height: 30px; /* 너비와 높이를 동일하게 설정 */
+    line-height: 30px; /* "X" 문자를 수직으로 중앙에 배치 */
+    text-align: center; /* "X" 문자를 수평으로 중앙에 배치 */
+    border-radius: 50%; /* 완전한 원으로 만듭니다. */
+    transition: color 0.3s, border-color 0.3s; /* 색상 전환 효과 */
+    
+}
+
+.delete-image:hover {
+    color: #b394d8; /* 마우스 오버 시 약간 더 어두운 보라색 */
+    border-color: #b394d8; /* 마우스 오버 시 테두리 색상도 변경 */
+}
+.img-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  
+    justify-content: center;  
+    padding: 20px;
+}
+/*
+
+.boardImg {
+    position: relative; 
+    width: 150px; 
+    height: 150px; 
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;  
+    overflow: hidden; 
+}
+
+.preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.inputImage {
+    display: none;  
+}
+
+.delete-image {
+    position: absolute;  
+    top: 10px;  
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #ffffff; 
+    font-size: 20px; 
+    border-radius: 50%;  
+    cursor: pointer;  
+    padding: 5px 8px;
+}
+
+*/
+
+#chat-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    right: 0px;
+    bottom: 12px;
+    position: fixed;
+}
