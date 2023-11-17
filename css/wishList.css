@@ -20,32 +20,38 @@ body {
     /*border: 1px solid red;*/
 }
 
-h2 {
-    margin-top: 130px;
+.mainContainer {
+    height: 100%;
 }
 
 h2 {
     text-align: center;
+    margin-bottom: 40px;
+    margin-top: 130px;
 }
 
 .heading::after {
     content: ''; /* 가상 요소의 내용을 비워두어 실제 텍스트는 표시되지 않도록 합니다. */
     display: block; /* 요소를 블록 레벨로 만들어 줄바꿈이 일어나도록 합니다. */
     margin: 5px auto; /* 위쪽의 여백과 수평 중앙 정렬 */
-    width: 5%; /* 가상 요소의 너비를 조정하여 밑줄의 길이를 결정합니다. */
+    width: 3%; /* 가상 요소의 너비를 조정하여 밑줄의 길이를 결정합니다. */
     border-bottom: 1px solid black;
 }
 
+
+
 .Btn {
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
+    background-color: white;
+    border:none;
     border-bottom: 1px solid gray; 
     text-decoration: none;
+    cursor: pointer;
 }
 
 /*표 라인그리기*/
 table {
     border-collapse: collapse;
-    margin-top: 30px;
 }
 
 .campingListTB th {
@@ -72,6 +78,7 @@ table {
 
 /* 캠핑 위시 리스트 표 좌우 조절*/
 .campingListTB {
+    margin-top: 0;
     width: 100%;
 }
 
@@ -90,7 +97,16 @@ table {
     width: auto;
 }
 
+.campingListTB th:nth-child(5) {
+    width: 8%;
+
+}
+.campingListTB th:nth-child(6) {
+
+    width: 8%;
+}
 .campingListTB th:last-child {
+
     width: 8%;
 }
 
@@ -144,7 +160,9 @@ img {
 
 .midContainer {
     width: 90%;
+    height: auto;
 }
+
 
 
 /*좌우 빈공간*/
@@ -155,11 +173,19 @@ img {
 
 /*a테그 to 네모버튼*/
 .grayBtn {
+    display: inline-block;
     color: gray;
     text-decoration: none;
+    background-color: white;
     border: 1px solid gray;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 104px;
+    transition-duration: 0.3s;
+}
+
+.grayBtn:hover {
+    background-color: black;
+    color: white;
+    border: none;
 }
 
 /*예약하기 버튼 왼쪽 마진 */
@@ -190,3 +216,67 @@ img {
     
 }
 
+/*헤더바*/
+.topBar{
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    border-radius: 0 0 10px 10px;
+
+    transition-duration: 0.3s;
+
+    position: sticky;
+    top: 0;
+}
+
+.topBar:hover{
+    background-color: rgba(204, 213, 174, 0.5);
+}
+
+.topMenu{
+    width: 100%;
+
+    flex-basis: 5%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.topMenu a{
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.7rem;
+
+    
+}
+
+.mainTitle{
+    flex-basis: 50%;
+    align-self: center;
+    font-size: 3rem;
+    font-weight: 900;
+
+    margin: 20px 0;
+
+    height: 60px;
+    line-height: 60px;
+    color: #333;
+    letter-spacing: 5px;
+}
+
+.bottomMenu{
+    flex-basis: 45%;
+    display: flex;
+    align-self: center;
+}
+
+.bottomMenu a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 600;
+}
